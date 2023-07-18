@@ -1,0 +1,37 @@
+CREATE TABLE Employee_table(id int,name varchar (50) age int E_salary varchar(50))
+select *from Employee_list
+
+alter table Employee_table alter column E_salary varchar(50) not null
+alter table Employee_table alter column E_salary varchar(50) null 
+ 
+alter table Employee_list add unique key (id);
+alter table Employee_list drop constraint code
+
+
+alter table Employee_list add primary key (id);
+alter table Employee_list drop constraint code
+
+
+alter table Employee_list add primary key (id);
+
+create table Employee_city
+(
+C_id int,
+C_name varchar(50),
+id int
+);
+ alter table Employee_city add foreign key (id)references Employee_table(id);
+alter table Employee_list drop constraint code
+
+alter table Employee_list add Check (age => 16);
+alter table Employee_list drop constraint code
+
+alter table Employee_list add default 18 for age;
+insert into Employee_list (id,,name,E_salary) values(2,'fazil',55000);
+
+
+
+
+
+
+ 
